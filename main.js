@@ -51,10 +51,28 @@ document.getElementById("login").addEventListener("submit", function(event) {
 
   function cargarNotas () {
 
-    fetch('https://24a0dac0-2579-4138-985c-bec2df4bdfcc-00-3unzo70c406dl.riker.replit.dev/students/1152203/notas' 
+    // URL del endpoint que devuelve un JSON
+var url = 'https://24a0dac0-2579-4138-985c-bec2df4bdfcc-00-3unzo70c406dl.riker.replit.dev/students/1152203/notas';
+
+// Realizar la solicitud GET utilizando fetch
+fetch(url)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Error en la solicitud');
+    }
+    return response.json(); // Convertir la respuesta a JSON
+  })
+  .then(data => {
+    // Manejar los datos JSON obtenidos
+    console.log(data); // Imprimir los datos en la consola
+    // Puedes hacer cualquier cosa con los datos, como mostrarlos en la página HTML, etc.
+  })
+  .catch(error => {
+    // Manejar errores de la solicitud
+    console.error('Error:', error);
+  });
 
 
-)
   }
 
   
