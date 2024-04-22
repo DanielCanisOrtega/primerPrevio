@@ -2,6 +2,8 @@
 <html>
   <head>
     <link type="text/css" href="style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     
 
   </head>
@@ -10,28 +12,29 @@
     <img src="logo.png" id="logo-index">
     <div class="informacion">
       <div class="datos">
-        <h2>Código</h2>
-        <h2 aria-placeholder="cargar codigo"></h2>
-        <h2>Nombre</h2>
-        <h2 aria-placeholder="cargar nombre"></h2>
+        <div class="titulos">
+          <h2 class="izquierda">Código</h2>
+          <h2 class="izquierda">Nombre</h2>
+
+        </div>
+        <div class="datos-estudiante">
+          <h2 class="derecha">CARGAR CODIGO</h2>
+          <h2 class="derecha">CARGAR NOMBRE</h2>
+        </div>
+        
       </div>
       <div class="promedio">
-        <table class="promedio">
-          <thead>
+        <table class="table table-sm" style="width: 10%;">
+          <thead style="background-color: lightgray;">
             <tr>
-              <th scope="col">Asignatura</th>
-              <th scope="col">Cre</th>
-              <th scope="col">P1</th>
-              <th scope="col">P2</th>
-              <th scope="col">P3</th>
-              <th scope="col">EF</th>
-              <th scope="col">DEF</th>
+              <th scope="col">Promedio</th>
             </tr>
-
           </thead>
-          <tbody></tbody>
+          <tbody>
+            <td>CARGAR PROMEDIO</td>
+          </tbody>
         </table>
-
+        
       </div>
 
     </div>
@@ -39,6 +42,22 @@
     <h2 id="relacion">Relación de asignaturas cursadas</h2>
 
     <div class="table">
+      <table class="table table-sm" style="width: 60%;">
+        <thead style="background-color: lightgray;">
+          <tr>
+            <th scope="col">Asignatura</th>
+                    <th scope="col">Cre</th>
+                    <th scope="col">P1</th>
+                    <th scope="col">P2</th>
+                    <th scope="col">P3</th>
+                    <th scope="col">EF</th>
+                    <th scope="col">DEF</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+      </table>
 
     </div>
 

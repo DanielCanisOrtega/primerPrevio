@@ -73,6 +73,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-left: 600px;
   }
 
   #relacion {
@@ -81,4 +82,28 @@
     color: red;
     text-align: center;
   }
+
+  .informacion {
+    display: flex;
+  }
+
+  .datos {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .promedio {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+  }
+
+  .titulos {
+    flex: 1;
+  }
+
+  .datos-estudiantes {
+    
+  }
+
   
