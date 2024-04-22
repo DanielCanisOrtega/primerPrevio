@@ -25,7 +25,20 @@ document.getElementById("login").addEventListener("submit", function(event) {
     })
     .then(data => {
       // Maneja la respuesta del servicio si es necesario
+      var objetoJSON = JSON.stringify(data);
+      localStorage.setItem("data", objetoJSON);
       console.log(data);
+
+      var usuarioRecuperado = localStorage.getItem("data");
+
+    // Convertir la cadena JSON a un objeto
+        var objetoDeserializado = JSON.parse(usuarioRecuperado);
+        var h2codigoUsuario = document.getElementById("codigo-usuario");
+    h2codigoUsuario.textContent = "" + objetoDeserializado.nombre.value;
+
+    var h2nombreUsuario = document.getElementById("nombre-usuario");
+    h2nombreUsuario.textContent =  "" + objetoDeserializado.codigo.value;
+        console.log(objetoDeserializado);
     })
     .catch(error => {
       // Maneja errores de la solicitud
@@ -33,5 +46,7 @@ document.getElementById("login").addEventListener("submit", function(event) {
     });
 
     window.open('./index.html');
+    
   });
+
   
