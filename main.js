@@ -45,7 +45,7 @@ document.getElementById("login").addEventListener("submit", function(event) {
       console.error('Error:', error);
     });
 
-    window.open('./index.html');
+    window.open('./promedio.html');
     
   });
 
