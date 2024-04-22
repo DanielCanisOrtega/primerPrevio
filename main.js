@@ -34,10 +34,10 @@ document.getElementById("login").addEventListener("submit", function(event) {
     // Convertir la cadena JSON a un objeto
         var objetoDeserializado = JSON.parse(usuarioRecuperado);
         var h2codigoUsuario = document.getElementById("codigo-usuario");
-    h2codigoUsuario.textContent = "" + objetoDeserializado.nombre.value;
+    h2codigoUsuario.textContent = "" + objetoDeserializado.nombre;
 
     var h2nombreUsuario = document.getElementById("nombre-usuario");
-    h2nombreUsuario.textContent =  "" + objetoDeserializado.codigo.value;
+    h2nombreUsuario.textContent =  "" + objetoDeserializado.codigo;
         console.log(objetoDeserializado);
     })
     .catch(error => {
@@ -48,5 +48,13 @@ document.getElementById("login").addEventListener("submit", function(event) {
     window.open('./promedio.html');
     
   });
+
+  function cargarNotas () {
+
+    fetch('https://24a0dac0-2579-4138-985c-bec2df4bdfcc-00-3unzo70c406dl.riker.replit.dev/students/1152203/notas' 
+
+
+)
+  }
 
   
