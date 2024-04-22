@@ -7,19 +7,20 @@
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="codigo.js" ></script>
 </head>
-<body>
-  <div class="login-container">
-    <form action="#" method="post">
-      <div class="form-group">
-        <label for="username">Código de Estudiante</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit" onclick="validar()">Ingresar</button>
-    </form>
-  </div>
+<body id="body-login">
+    <img src="logo.png" id="logo-login">
+    <div class="login-container">
+        <form action="#" method="post">
+        <div class="form-group">
+            <label for="username">Código de Estudiante</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" id="button-login" onclick="validar()">Ingresar</button>
+        </form>
+    </div>
 </body>
 </html>
